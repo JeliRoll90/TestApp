@@ -7,6 +7,27 @@
     android:background="@mipmap/images">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        android:id="@+id/radioButton"
+        android:layout_above="@+id/editText"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginBottom="71dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/radioButton"
+        android:layout_marginBottom="53dp"
+        android:text="E-mail" />
 
 </RelativeLayout>
